@@ -149,6 +149,12 @@ code, pre {
   padding: 0 1.5rem;
 }
 
+@media (max-width: 640px) {
+  .container {
+    padding: 0 1.15rem;
+  }
+}
+
 .section-wrapper {
   padding: 6rem 0;
   position: relative;
@@ -156,7 +162,13 @@ code, pre {
 
 @media (max-width: 768px) {
   .section-wrapper {
-    padding: 4rem 0;
+    padding: 3.75rem 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-wrapper {
+    padding: 3rem 0;
   }
 }
 

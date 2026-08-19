@@ -20,7 +20,6 @@ export const Navbar = ({ activeSection }) => {
     { id: 'about', label: 'About' },
     { id: 'skills', label: 'Skills' },
     { id: 'projects', label: 'Projects' },
-    { id: 'education', label: 'Education' },
     { id: 'contact', label: 'Contact' }
   ];
 
@@ -42,8 +41,17 @@ export const Navbar = ({ activeSection }) => {
   return (
     <header className={`navbar-header ${isScrolled ? 'scrolled' : ''}`}>
       <div className="container nav-container">
-        {/* Left balance spacer */}
-        <div className="nav-spacer-left" />
+        {/* Brand Logo on Left */}
+        <button
+          onClick={() => handleNavClick('hero')}
+          className="nav-brand"
+          aria-label="Rohit Kumar Home"
+        >
+          <span className="logo-bracket">&lt;</span>
+          <span className="logo-initials">RK</span>
+          <span className="logo-bracket">/&gt;</span>
+          <span className="nav-brand-name">Rohit</span>
+        </button>
 
         {/* Desktop Navigation Links (Dead Center) */}
         <nav className="desktop-nav" aria-label="Main Navigation">

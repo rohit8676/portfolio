@@ -149,18 +149,20 @@ export const Hero = ({ onOpenResume }) => {
           {/* Header Profile Row */}
           <div className="hero-profile-row animate-fade-in">
             <div className="hero-circular-avatar-frame">
-              <img
-                src="/rohit-profile.jpg"
-                alt="Rohit Kumar"
-                className="hero-circular-avatar-img"
-              />
-              <span className="avatar-online-dot" title="Online & Available" />
+              <div className="avatar-ambient-aura" />
+              <div className="avatar-inner-ring">
+                <img
+                  src="/rohit-profile.jpg"
+                  alt="Rohit Kumar"
+                  className="hero-circular-avatar-img"
+                />
+              </div>
             </div>
 
             <div className="hero-profile-meta">
-              <p className="hero-greeting">
+              <h2 className="hero-greeting">
                 {PERSONAL_INFO.greeting}
-              </p>
+              </h2>
               <span className="hero-location-text">
                 Software Developer • Delhi, India
               </span>
@@ -207,39 +209,6 @@ export const Hero = ({ onOpenResume }) => {
               <Download size={16} />
               <span>Resume</span>
             </button>
-          </div>
-
-          {/* Quick Factual Highlights */}
-          <div className="hero-stats-row">
-            <div className="hero-stat-item">
-              <div className="stat-icon-wrap">
-                <GraduationCap size={18} className="stat-icon" />
-              </div>
-              <div className="stat-info">
-                <span className="stat-title">BCA Graduate</span>
-                <span className="stat-desc">Computer Applications</span>
-              </div>
-            </div>
-
-            <div className="hero-stat-item">
-              <div className="stat-icon-wrap">
-                <Layers size={18} className="stat-icon" />
-              </div>
-              <div className="stat-info">
-                <span className="stat-title">Full-Stack & Backend</span>
-                <span className="stat-desc">Web & API Architecture</span>
-              </div>
-            </div>
-
-            <div className="hero-stat-item">
-              <div className="stat-icon-wrap">
-                <MapPin size={18} className="stat-icon" />
-              </div>
-              <div className="stat-info">
-                <span className="stat-title">Delhi, India</span>
-                <span className="stat-desc">Based & Open to Work</span>
-              </div>
-            </div>
           </div>
         </div>
 

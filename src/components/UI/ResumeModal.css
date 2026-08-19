@@ -257,14 +257,46 @@
   color: var(--text-primary);
 }
 
-.resume-modal-footer {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 1rem;
-  padding: 1.25rem 2rem;
-  border-top: 1px solid var(--border-subtle);
-  background: var(--bg-card);
+@media (max-width: 640px) {
+  .resume-modal-overlay {
+    padding: 0.5rem;
+  }
+
+  .resume-modal-header {
+    padding: 1rem 1.25rem;
+  }
+
+  .resume-modal-body {
+    padding: 1.25rem 1rem;
+    gap: 1.25rem;
+  }
+
+  .resume-modal-title {
+    font-size: 1.25rem;
+  }
+
+  .resume-modal-subtitle {
+    font-size: 0.82rem;
+  }
+
+  .resume-contact-row {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0.75rem 1rem;
+  }
+
+  .resume-skills-grid {
+    grid-template-columns: 1fr;
+    gap: 0.6rem;
+  }
+
+  .resume-modal-footer {
+    padding: 0.85rem 1.25rem;
+  }
+
+  .resume-modal-footer .btn {
+    width: 100%;
+  }
 }
 
 @media print {

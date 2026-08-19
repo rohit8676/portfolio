@@ -1,7 +1,7 @@
 import React from 'react';
 import { PERSONAL_INFO } from '../../data/portfolioData';
-import { ArrowUp, Mail, Phone, MapPin, Heart, Code2 } from 'lucide-react';
-import { GithubIcon, LinkedinIcon } from '../UI/Icons';
+import { ArrowUp } from 'lucide-react';
+import { GithubIcon, LinkedinIcon, InstagramIcon, GmailIcon, PhoneIcon } from '../UI/Icons';
 import './Footer.css';
 
 export const Footer = () => {
@@ -17,7 +17,6 @@ export const Footer = () => {
     { href: '#about', label: 'About' },
     { href: '#skills', label: 'Skills' },
     { href: '#projects', label: 'Projects' },
-    { href: '#education', label: 'Education' },
     { href: '#contact', label: 'Contact' }
   ];
 
@@ -41,37 +40,47 @@ export const Footer = () => {
                 href={PERSONAL_INFO.socialPlaceholders.github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="social-icon-btn"
+                className="social-icon-btn github-btn"
                 aria-label="GitHub Profile"
                 title="GitHub"
               >
-                <GithubIcon size={18} />
+                <GithubIcon size={20} />
               </a>
               <a
                 href={PERSONAL_INFO.socialPlaceholders.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="social-icon-btn"
+                className="social-icon-btn linkedin-btn"
                 aria-label="LinkedIn Profile"
                 title="LinkedIn"
               >
-                <LinkedinIcon size={18} />
+                <LinkedinIcon size={20} />
+              </a>
+              <a
+                href={PERSONAL_INFO.socialPlaceholders.instagram}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="social-icon-btn instagram-btn"
+                aria-label="Instagram Profile"
+                title="Instagram"
+              >
+                <InstagramIcon size={20} />
               </a>
               <a
                 href={PERSONAL_INFO.socialPlaceholders.email}
-                className="social-icon-btn"
+                className="social-icon-btn gmail-btn"
                 aria-label="Send Email"
                 title="Email"
               >
-                <Mail size={18} />
+                <GmailIcon size={20} />
               </a>
               <a
                 href={PERSONAL_INFO.socialPlaceholders.phone}
-                className="social-icon-btn"
-                aria-label="Phone"
-                title="Phone"
+                className="social-icon-btn phone-btn"
+                aria-label="Phone / WhatsApp"
+                title="Phone / WhatsApp"
               >
-                <Phone size={18} />
+                <PhoneIcon size={20} />
               </a>
             </div>
           </div>
@@ -110,10 +119,6 @@ export const Footer = () => {
         <div className="footer-bottom">
           <p className="copyright-text">
             © 2026 {PERSONAL_INFO.name}. All rights reserved.
-          </p>
-
-          <p className="built-text">
-            Built with <strong>React</strong> & <strong>Modern Web Standards</strong>
           </p>
 
           <button

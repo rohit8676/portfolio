@@ -71,7 +71,7 @@ export const ResumeModal = ({ isOpen, onClose }) => {
               </div>
               <div className="resume-skill-col">
                 <span className="resume-skill-label">Backend:</span>
-                <span className="resume-skill-val">Java, Spring Boot, C#, REST APIs</span>
+                <span className="resume-skill-val">Java, Spring Boot, .NET, Node.js, C#, REST APIs</span>
               </div>
               <div className="resume-skill-col">
                 <span className="resume-skill-label">Databases:</span>
@@ -79,7 +79,7 @@ export const ResumeModal = ({ isOpen, onClose }) => {
               </div>
               <div className="resume-skill-col">
                 <span className="resume-skill-label">Tools & VCS:</span>
-                <span className="resume-skill-val">Git, GitHub, VS Code</span>
+                <span className="resume-skill-val">Android Studio, Git, GitHub, VS Code</span>
               </div>
             </div>
           </div>

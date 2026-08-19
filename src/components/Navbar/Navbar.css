@@ -21,13 +21,41 @@
 
 .nav-container {
   display: grid;
-  grid-template-columns: 1fr auto 1fr;
+  grid-template-columns: auto 1fr auto;
   align-items: center;
   width: 100%;
+  gap: 1.5rem;
 }
 
-.nav-spacer-left {
-  display: block;
+.nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-family: var(--font-mono);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  text-decoration: none;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0.25rem 0;
+}
+
+.logo-bracket {
+  color: var(--accent-cyan);
+}
+
+.logo-initials {
+  color: var(--accent-primary);
+}
+
+.nav-brand-name {
+  font-family: var(--font-sans);
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--text-primary);
+  margin-left: 0.35rem;
 }
 
 /* Desktop Nav Links (Centered) */

@@ -44,6 +44,7 @@ export const PERSONAL_INFO = {
   socialPlaceholders: {
     github: "https://github.com/",
     linkedin: "https://linkedin.com/in/",
+    instagram: "https://www.instagram.com/its_rohitray_04",
     email: "mailto:rk7312899@gmail.com",
     phone: "tel:+918757628253"
   }
@@ -78,25 +79,34 @@ export const SKILLS_DATA = {
       description: "Crafting modern, accessible, and responsive user interfaces with reactive component architectures.",
       skills: [
         {
+          id: "react",
           name: "React",
           category: "frontend",
           highlight: "Component UI & State Hooks",
-          iconName: "Code2",
-          badge: "Library"
+          iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+          badge: "Library",
+          brandColor: "#61DAFB",
+          tags: ["Hooks", "Virtual DOM", "SPA"]
         },
         {
+          id: "nextjs",
           name: "Next.js",
           category: "frontend",
-          highlight: "Modern Web Framework",
-          iconName: "Globe",
-          badge: "Framework"
+          highlight: "Modern Web & SSR Framework",
+          iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
+          badge: "Framework",
+          brandColor: "#38BDF8",
+          tags: ["SSR/SSG", "App Router", "Full-Stack"]
         },
         {
+          id: "javascript",
           name: "JavaScript",
           category: "frontend",
-          highlight: "ES6+, Async/Await, DOM APIs",
-          iconName: "FileCode",
-          badge: "Language"
+          highlight: "ES6+, Async/Await, Modern DOM",
+          iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+          badge: "Language",
+          brandColor: "#F7DF1E",
+          tags: ["ES6+", "Async/Await", "Event Loop"]
         }
       ]
     },
@@ -105,25 +115,54 @@ export const SKILLS_DATA = {
       description: "Building scalable services, RESTful APIs, and robust server-side application logic.",
       skills: [
         {
+          id: "java",
           name: "Java",
           category: "backend",
-          highlight: "OOP, Core Java, Data Structures",
-          iconName: "Cpu",
-          badge: "Language"
+          highlight: "OOP, Core Java & Data Structures",
+          iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
+          badge: "Language",
+          brandColor: "#EA2D2E",
+          tags: ["OOP", "JVM", "Multithreading"]
         },
         {
+          id: "springboot",
           name: "Spring Boot",
           category: "backend",
           highlight: "REST APIs & Microservices",
-          iconName: "Server",
-          badge: "Framework"
+          iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg",
+          badge: "Framework",
+          brandColor: "#6DB33F",
+          tags: ["Spring MVC", "REST APIs", "IoC"]
         },
         {
+          id: "nodejs",
+          name: "Node.js",
+          category: "backend",
+          highlight: "Server-side Runtime & Async APIs",
+          iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+          badge: "Runtime",
+          brandColor: "#5FA04E",
+          tags: ["Express", "Async I/O", "REST APIs"]
+        },
+        {
+          id: "dotnet",
+          name: ".NET",
+          category: "backend",
+          highlight: "Cross-platform Framework & Web APIs",
+          iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg",
+          badge: "Framework",
+          brandColor: "#512BD4",
+          tags: ["ASP.NET Core", "Entity Framework", "C#"]
+        },
+        {
+          id: "csharp",
           name: "C#",
           category: "backend",
           highlight: ".NET Development & Systems",
-          iconName: "Terminal",
-          badge: "Language"
+          iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg",
+          badge: "Language",
+          brandColor: "#9B4993",
+          tags: [".NET", "LINQ", "OOP Architecture"]
         }
       ]
     },
@@ -132,18 +171,24 @@ export const SKILLS_DATA = {
       description: "Designing relational database schemas, complex SQL joins, and data integrity constraints.",
       skills: [
         {
+          id: "sql",
           name: "SQL",
           category: "database",
-          highlight: "Queries, DDL/DML, Optimization",
-          iconName: "Database",
-          badge: "Query Language"
+          highlight: "Queries, DDL/DML & Optimization",
+          iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azuresqldatabase/azuresqldatabase-original.svg",
+          badge: "Query Language",
+          brandColor: "#00758F",
+          tags: ["Complex Joins", "Indexing", "Schemas"]
         },
         {
+          id: "mysql",
           name: "MySQL",
           category: "database",
           highlight: "Relational DBMS & Storage Engine",
-          iconName: "Layers",
-          badge: "RDBMS"
+          iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
+          badge: "RDBMS",
+          brandColor: "#00758F",
+          tags: ["InnoDB", "ACID", "Transactions"]
         }
       ]
     },
@@ -152,25 +197,44 @@ export const SKILLS_DATA = {
       description: "Modern developer workflows, source version control, and productivity environments.",
       skills: [
         {
+          id: "androidstudio",
+          name: "Android Studio",
+          category: "tools",
+          highlight: "Android App Dev, Kotlin/Java & Gradle",
+          iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original.svg",
+          badge: "IDE / Mobile",
+          brandColor: "#3DDC84",
+          tags: ["Android SDK", "Emulators", "Gradle"]
+        },
+        {
+          id: "git",
           name: "Git",
           category: "tools",
           highlight: "Version Control & Branching",
-          iconName: "GitBranch",
-          badge: "VCS"
+          iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
+          badge: "VCS",
+          brandColor: "#F05032",
+          tags: ["Branching", "Merging", "Rebase"]
         },
         {
+          id: "github",
           name: "GitHub",
           category: "tools",
-          highlight: "Repository & Collaboration",
-          iconName: "GitPullRequest",
-          badge: "Platform"
+          highlight: "Repository & Team Collaboration",
+          iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
+          badge: "Platform",
+          brandColor: "#94A3B8",
+          tags: ["Pull Requests", "CI/CD", "Collab"]
         },
         {
+          id: "vscode",
           name: "VS Code",
           category: "tools",
           highlight: "IDE, Debugging & Extensions",
-          iconName: "Laptop",
-          badge: "Editor"
+          iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg",
+          badge: "Editor",
+          brandColor: "#007ACC",
+          tags: ["Debugging", "Extensions", "CLI"]
         }
       ]
     }
